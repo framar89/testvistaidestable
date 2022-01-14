@@ -1,11 +1,11 @@
 apiVersion: v2
 publisher: test
-name: intellij-ide
+name: vista-ide
 version: latest
 type: Che Editor
-displayName: IntelliJ Platform IDE
-title: IDE based on the IntelliJ Platform
-description: IDE based on the IntelliJ Platform running using Projector
+displayName: Vista IDE
+title: Vista IDE
+description: Vista IDE
 icon: https://www.jetbrains.com/apple-touch-icon.png
 category: Editor
 repository: https://github.com/che-incubator/jetbrains-editor-images
