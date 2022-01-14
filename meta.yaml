@@ -1,0 +1,23 @@
+version: 1.0.0
+editors:
+  - id: vistaide
+    title: Vista IDE development version.
+    displayName: vista-ide
+    description: Vista IDE, get the latest release each day.
+    firstPublicationDate: "2022-01-01"
+    endpoints:
+      - name: "vista"
+        public: true
+        targetPort: 8000
+        attributes:
+          protocol: http
+          type: ide
+          secure: true
+          cookiesAuthEnabled: true
+          discoverable: false
+    containers:
+      - name: vista-ide
+        image: crccheck/hello-world
+        mountSources: true
+        ports:
+          - exposedPort: 8000
