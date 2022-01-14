@@ -2,7 +2,7 @@ version: 1.0.0
 editors:
   - id: vistaide
     title: Vista IDE development version.
-    publisher: Test
+    publisher: test
     displayName: vista-ide
     description: Vista IDE, get the latest release each day.
     firstPublicationDate: "2022-01-01"
