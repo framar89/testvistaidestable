@@ -19,7 +19,7 @@ spec:
         protocol: http
         type: ide
   containers:
-   - name: intellij-ide
+   - name: vista-ide
      image: crccheck/hello-world
      mountSources: true
      ports:
