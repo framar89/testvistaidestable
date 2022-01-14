@@ -1,0 +1,26 @@
+apiVersion: v2
+publisher: test
+name: intellij-ide
+version: latest
+type: Che Editor
+displayName: IntelliJ Platform IDE
+title: IDE based on the IntelliJ Platform
+description: IDE based on the IntelliJ Platform running using Projector
+icon: https://www.jetbrains.com/apple-touch-icon.png
+category: Editor
+repository: https://github.com/che-incubator/jetbrains-editor-images
+firstPublicationDate: "2021-04-10"
+spec:
+  endpoints:
+   -  name: vista
+      public: true
+      targetPort: 8000
+      attributes:
+        protocol: http
+        type: ide
+  containers:
+   - name: intellij-ide
+     image: crccheck/hello-world
+     mountSources: true
+     ports:
+         - exposedPort: 8000
