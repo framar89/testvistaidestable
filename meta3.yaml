@@ -1,0 +1,26 @@
+apiVersion: v2
+publisher: test
+name: vista-ide
+version: latest
+type: Che Editor
+displayName: Vista IDE
+title: Vista IDE
+description: Vista IDE
+icon: https://www.jetbrains.com/apple-touch-icon.png
+category: Editor
+repository: https://github.com/che-incubator/jetbrains-editor-images
+firstPublicationDate: "2021-04-10"
+spec:
+  endpoints:
+   -  name: vista
+      public: true
+      targetPort: 80
+      attributes:
+        protocol: http
+        type: ide
+  containers:
+   - name: vista-ide
+     image: nginxdemos/nginx-hello
+     mountSources: true
+     ports:
+         - exposedPort: 80
