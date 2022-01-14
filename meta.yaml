@@ -1,11 +1,11 @@
 version: 1.0.0
-publisher: test
 editors:
   - id: vistaide
     title: Vista IDE development version.
-    publisher: test
     displayName: vista-ide
     description: Vista IDE, get the latest release each day.
+    icon: https://raw.githubusercontent.com/theia-ide/theia/master/logo/theia-logo-no-text-black.svg?sanitize=true
+    repository: https://github.com/eclipse-che/che-theia
     firstPublicationDate: "2022-01-01"
     endpoints:
       - name: "vista"
